@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module 'horariosApp', [
+window.app = angular.module 'horariosApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
