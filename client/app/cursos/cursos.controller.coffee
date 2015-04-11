@@ -16,3 +16,6 @@ app.controller 'CursosCtrl', ($scope) ->
 
   $scope.eliminarMateria = (curso, materia) ->
     _.remove curso.materias, materia
+
+  $scope.agregarMateria = (curso) ->
+    curso.materias.push profesor: "", nombre: ""

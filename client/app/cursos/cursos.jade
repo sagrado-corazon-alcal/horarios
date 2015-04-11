@@ -24,4 +24,9 @@ div(ng-include='"components/navbar/navbar.html"')
                   td
                     input.form-control(ng-model="materia.profesor", typeahead="it for it in profesores | filter:$viewValue")
                   td
-                    a(href="#", ng-click="eliminarMateria(curso, materia)") Eliminar
+                    button.btn.btn-danger(ng-click="eliminarMateria(curso, materia)")
+                      i.fa.fa-times
+
+            button.btn.btn-success(ng-click="agregarMateria(curso)")
+              i.fa.fa-plus
+              | &nbsp; Agregar materia
