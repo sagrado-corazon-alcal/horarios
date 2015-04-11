@@ -7,4 +7,8 @@ before_script:
   - bower install
 after_success:
   - ./scripts/deploy.sh
+cache:
+  directories:
+    - node_modules
+    - client/bower_components
 services: mongodb
