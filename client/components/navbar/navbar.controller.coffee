@@ -10,7 +10,7 @@ angular.module 'horariosApp'
     link: "/cursos"
     childs: [
       title: "Ver"
-      link: ""
+      link: "/ver"
     ,
       title: "Cargar"
       link: "/cargar"

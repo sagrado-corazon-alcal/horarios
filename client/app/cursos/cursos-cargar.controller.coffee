@@ -1,6 +1,8 @@
 'use strict'
 
-app.controller 'CursosCargarCtrl', ($scope, $http) ->
+app.controller 'CursosCargarCtrl', ($scope, $state, $http) ->
+  $state.go ".excel"
+
   $scope.parseExcel = (xls) ->
     workbook = XLSX.read xls, type: "binary"
     data = _.map workbook.Sheets, XLSX.utils.sheet_to_json
@@ -15,6 +17,8 @@ app.controller 'CursosCargarCtrl', ($scope, $http) ->
       $scope.materias = getUnique "nombre"
       $scope.profesores = getUnique "profesor"
     , true
+
+    $state.go "^.edicion"
 
   $scope.eliminarMateria = (curso, materia) ->
     _.remove curso.materias, materia

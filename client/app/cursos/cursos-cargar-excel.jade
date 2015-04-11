@@ -1,0 +1,5 @@
+alert(type="warning") Por ahora el unico formato soportado es XLS (Excel 2003), así que probablemente tengas que convertirlo antes :(
+
+.form-group
+  label(for="excel") Seleccioná el archivo Excel con el listado de materias por año.
+  input.form-control(name="excel", type="file", ng-file-select="", on-read-file="parseExcel($fileContent)")
