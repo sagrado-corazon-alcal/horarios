@@ -11,8 +11,10 @@ app.controller 'CursosCtrl', ($scope) ->
 
     getUnique = (field) -> _($scope.cursos).map("materias").flatten().map(field).uniq().compact().sort().value()
 
-    $scope.materias = getUnique "nombre"
-    $scope.profesores = getUnique "profesor"
+    $scope.$watch "cursos", ->
+      $scope.materias = getUnique "nombre"
+      $scope.profesores = getUnique "profesor"
+    , true
 
   $scope.eliminarMateria = (curso, materia) ->
     _.remove curso.materias, materia
