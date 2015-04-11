@@ -9,10 +9,10 @@ app.controller 'CursosCtrl', ($scope) ->
       division: workbook.SheetNames[index]
       materias: _(row).map((it) -> profesor: it.Profesor, nombre: it.Materia).value()
 
-    getUnique = (field) -> _(data).flatten().map(field).uniq().compact().sort().value()
+    getUnique = (field) -> _($scope.cursos).map("materias").flatten().map(field).uniq().compact().sort().value()
 
-    $scope.profesores = getUnique "Profesor"
-    $scope.materias = getUnique "Materia"
+    $scope.materias = getUnique "nombre"
+    $scope.profesores = getUnique "profesor"
 
   $scope.eliminarMateria = (curso, materia) ->
     _.remove curso.materias, materia
