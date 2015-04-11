@@ -13,3 +13,6 @@ app.controller 'CursosCtrl', ($scope) ->
 
     $scope.profesores = getUnique "Profesor"
     $scope.materias = getUnique "Materia"
+
+  $scope.eliminarMateria = (curso, materia) ->
+    _.remove curso.materias, materia

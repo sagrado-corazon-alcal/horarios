@@ -23,3 +23,5 @@ div(ng-include='"components/navbar/navbar.html"')
                     input.form-control(ng-model="materia.nombre", typeahead="it for it in materias | filter:$viewValue")
                   td
                     input.form-control(ng-model="materia.profesor", typeahead="it for it in profesores | filter:$viewValue")
+                  td
+                    a(href="#", ng-click="eliminarMateria(curso, materia)") Eliminar
