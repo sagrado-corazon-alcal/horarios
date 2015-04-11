@@ -5,6 +5,9 @@ angular.module 'horariosApp'
   $scope.menu = [
     title: 'Home'
     link: '/'
+  ,
+    title: "Cargar cursos"
+    link: "/cursos"
   ]
   $scope.isCollapsed = true
 
