@@ -1,13 +1,15 @@
 'use strict'
 
 angular.module 'horariosApp'
-.config ($routeProvider) ->
-  $routeProvider
+.config ($stateProvider) ->
+  $stateProvider
 
-  .when '/cursos/cargar',
-    templateUrl: 'app/cursos/cursos-cargar.html'
-    controller: 'CursosCargarCtrl'
-
-  .when '/cursos',
+  .state 'cursos',
+    url: '/cursos'
     templateUrl: 'app/cursos/cursos-ver.html'
     controller: 'CursosVerCtrl'
+
+  .state 'cursos.cargar',
+    url: '/cargar'
+    templateUrl: 'app/cursos/cursos-cargar.html'
+    controller: 'CursosCargarCtrl'

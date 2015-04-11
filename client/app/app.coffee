@@ -4,12 +4,11 @@ window.app = angular.module 'horariosApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute',
+  'ui.router',
   'ui.bootstrap'
 ]
-.config ($routeProvider, $locationProvider) ->
-  $routeProvider
-  .otherwise
-    redirectTo: '/'
+.config ($stateProvider, $urlRouterProvider, $locationProvider) ->
+  $urlRouterProvider
+  .otherwise '/'
 
   $locationProvider.html5Mode true

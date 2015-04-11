@@ -1,8 +1,9 @@
 'use strict'
 
 angular.module 'horariosApp'
-.config ($routeProvider) ->
-  $routeProvider
-  .when '/',
+.config ($stateProvider) ->
+  $stateProvider
+  .state 'main',
+    url: '/'
     templateUrl: 'app/main/main.html'
     controller: 'MainCtrl'
