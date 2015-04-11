@@ -19,5 +19,7 @@ div(ng-include='"components/navbar/navbar.html"')
                   th Profesor
               tbody
                 tr(ng-repeat='materia in curso.materias')
-                  td {{materia.nombre}}
-                  td {{materia.profesor}}
+                  td
+                    input.form-control(ng-model="materia.nombre")
+                  td
+                    input.form-control(ng-model="materia.profesor")
