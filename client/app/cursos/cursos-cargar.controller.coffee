@@ -1,6 +1,6 @@
 'use strict'
 
-app.controller 'CursosCtrl', ($scope) ->
+app.controller 'CursosCargarCtrl', ($scope, $http) ->
   $scope.parseExcel = (xls) ->
     workbook = XLSX.read xls, type: "binary"
     data = _.map workbook.Sheets, XLSX.utils.sheet_to_json
@@ -21,3 +21,14 @@ app.controller 'CursosCtrl', ($scope) ->
 
   $scope.agregarMateria = (curso) ->
     curso.materias.push profesor: "", nombre: ""
+
+  $scope.submit = ->
+    $http.post '/api/divisiones', _.map $scope.cursos, (it) ->
+      division: it.division
+      materias:
+        _(it.materias)
+          .groupBy "nombre"
+          .map (materias, nombre) ->
+            nombre: nombre
+            profesores: _(materias).map("profesor").flatten().value()
+          .value()
