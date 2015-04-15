@@ -4,17 +4,27 @@ var should = require('should');
 var app = require('../../app');
 var request = require('supertest');
 
-describe('GET /api/divisiones', function() {
+var Division = require('./division.model');
 
-  it('should respond with JSON array', function(done) {
-    request(app)
-      .get('/api/divisiones')
-      .expect(200)
-      .expect('Content-Type', /json/)
-      .end(function(err, res) {
-        if (err) return done(err);
-        res.body.should.be.instanceof(Array);
-        done();
+describe('Divisiones', function() {
+
+  it('should borrar las actuales antes de crear las nuevas', function(done) {
+    Division
+      .createAsync({
+        division: "1B",
+        materias: []
+      })
+      .then(function () {
+          request(app)
+          .post('/api/divisiones')
+          .send([{division: "2B", materias: []}])
+          .expect(201)
+          .end(function(err, res) {
+            Division.findAsync().then(function (result) {
+              result.length.should.equal(1);
+              done();
+            });
+          });
       });
   });
 });
