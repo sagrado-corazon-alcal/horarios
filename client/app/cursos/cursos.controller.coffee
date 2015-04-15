@@ -23,4 +23,12 @@ app.controller 'CursosCtrl', ($scope, $http) ->
     curso.materias.push profesor: "", nombre: ""
 
   $scope.submit = ->
-    $http.post '/api/cursos', $scope.cursos
+    $http.post '/api/divisiones', _.map $scope.cursos, (it) ->
+      division: it.division
+      materias:
+        _(it.materias)
+          .groupBy "nombre"
+          .map (materias, nombre) ->
+            nombre: nombre
+            profesores: _(materias).map("profesor").flatten().value()
+          .value()
