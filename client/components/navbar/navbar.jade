@@ -17,6 +17,6 @@ div.navbar.navbar-default.navbar-static-top(ng-controller='NavbarCtrl')
           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
             | {{item.title}}
             span.caret
-          ul.dropdown-menu(ng-repeat="child in item.childs", role='menu')
-            li
+          ul.dropdown-menu(role='menu')
+            li(ng-repeat="child in item.childs")
               a(href='{{item.link + child.link}}') {{child.title}}

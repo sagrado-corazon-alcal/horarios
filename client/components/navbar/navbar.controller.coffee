@@ -9,6 +9,9 @@ angular.module 'horariosApp'
     title: "Cursos"
     link: "/cursos"
     childs: [
+      title: "Ver"
+      link: "/"
+    ,
       title: "Cargar"
       link: "/cargar"
     ]
