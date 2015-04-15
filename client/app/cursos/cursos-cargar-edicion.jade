@@ -2,25 +2,26 @@ alert(type="warning")
   | Revisá que todos los cursos tengan el profesor correspondiente y el nombre bien escrito.
   | También podés agregar o borrar cursos, pero tené en cuenta que no puede haber campos vacíos.
 
-tabset
-  tab(ng-repeat="curso in cursos", heading="{{curso.division}}")
-    table.table
-      thead
-        tr
-          th Materia
-          th Profesor
-      tbody
-        tr(ng-repeat='materia in curso.materias')
-          td
-            input.form-control(ng-model="materia.nombre", typeahead="it for it in materias | filter:$viewValue")
-          td
-            input.form-control(ng-model="materia.profesor", typeahead="it for it in profesores | filter:$viewValue")
-          td
-            button.btn.btn-danger(ng-click="eliminarMateria(curso, materia)")
-              i.fa.fa-times
+form(novalidate, name="form", ng-submit='submit()')
+  tabset
+    tab(ng-repeat="curso in cursos", heading="{{curso.division}}")
+      table.table
+        thead
+          tr
+            th Materia
+            th Profesor
+        tbody
+          tr(ng-repeat='materia in curso.materias')
+            td
+              input.form-control(ng-model="materia.nombre", typeahead="it for it in materias | filter:$viewValue", required="")
+            td
+              input.form-control(ng-model="materia.profesor", typeahead="it for it in profesores | filter:$viewValue", required="")
+            td
+              button.btn.btn-danger(ng-click="eliminarMateria(curso, materia)")
+                i.fa.fa-times
 
-    button.btn.btn-success(ng-click="agregarMateria(curso)")
-      i.fa.fa-plus
-      | &nbsp; Agregar materia
+      button.btn.btn-success(ng-click="agregarMateria(curso)")
+        i.fa.fa-plus
+        | &nbsp; Agregar materia
 
-    input.btn.btn-primary(type="submit", value="Guardar")
+      input.btn.btn-primary(type="submit", value="Guardar", ng-disabled="!form.$valid")
