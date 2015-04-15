@@ -1,11 +1,11 @@
 'use strict'
 
-describe 'Controller: CursosCtrl', ->
+describe 'Controller: CursosCargarCtrl', ->
 
   # load the controller's module
   beforeEach module 'horariosApp'
 
-  CursosCtrl = undefined
+  CursosCargarCtrl = undefined
   scope = undefined
   $httpBackend = undefined
 
@@ -13,7 +13,7 @@ describe 'Controller: CursosCtrl', ->
   beforeEach inject (_$httpBackend_, $controller, $rootScope) ->
     $httpBackend = _$httpBackend_
     scope = $rootScope.$new()
-    CursosCtrl = $controller 'CursosCtrl', $scope: scope
+    CursosCargarCtrl = $controller 'CursosCargarCtrl', $scope: scope
 
   it 'should unir los profesores de las materias iguales', ->
     scope.cursos = [

@@ -1,6 +1,6 @@
 'use strict'
 
-app.controller 'CursosCtrl', ($scope, $http) ->
+app.controller 'CursosCargarCtrl', ($scope, $http) ->
   $scope.parseExcel = (xls) ->
     workbook = XLSX.read xls, type: "binary"
     data = _.map workbook.Sheets, XLSX.utils.sheet_to_json
