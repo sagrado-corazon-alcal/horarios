@@ -36,3 +36,6 @@ app.controller 'CursosCargarCtrl', ($scope, $state, $http) ->
             nombre: nombre
             profesores: _(materias).map("profesor").flatten().value()
           .value()
+
+    .success ->
+      $state.go "cursos.ver"
