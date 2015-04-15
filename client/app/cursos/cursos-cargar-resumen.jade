@@ -1,0 +1,12 @@
+p
+  | Se ingresaron&nbsp;
+  b {{totalDeProfesores()}}
+  |  profesores en total.
+
+p Estas son la cantidad de materias por división:
+ul
+  li(ng-repeat="it in cantidadMateriasPorAnio()")
+    | {{it.division}} -&nbsp;
+    b {{it.cantidad}}
+
+input.btn.btn-primary(type="submit", value="Guardar", ng-disabled="!form.$valid")

@@ -24,3 +24,6 @@ angular.module 'horariosApp'
   .state 'cursos.cargar.edicion',
     url: '/edicion'
     templateUrl: 'app/cursos/cursos-cargar-edicion.html'
+
+  .state 'cursos.cargar.resumen',
+    templateUrl: 'app/cursos/cursos-cargar-resumen.html'
