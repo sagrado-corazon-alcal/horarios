@@ -3,14 +3,17 @@
 var _ = require('lodash');
 var Curso = require('./curso.model');
 
+var Promise = require('bluebird');
+
 // Creates a new curso in the DB.
 exports.create = function(req, res) {
-  req.body.forEach(function (it) {
-    Curso.create(it, function(err, curso) {
-      if(err) { return handleError(res, err); }
-      return res.json(201, curso);
-    });
-  });
+  var promises = req.body.map(function (it) { return Curso.createAsync(it); });
+
+  Promise.all(promises)
+    .then(function (result) {
+      res.json(201, result);
+    })
+    .catch(_.partial(handleError, res));
 };
 
 function handleError(res, err) {
