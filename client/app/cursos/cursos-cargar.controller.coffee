@@ -1,8 +1,6 @@
 'use strict'
 
 app.controller 'CursosCargarCtrl', ($scope, $state, $http) ->
-  $state.go ".excel"
-
   getUnique = (field) -> _($scope.cursos).map("materias").flatten().map(field).uniq().compact().sort().value()
 
   $scope.parseExcel = (xls) ->
