@@ -7,3 +7,5 @@ angular.module 'horariosApp'
     url: '/'
     templateUrl: 'app/main/main.html'
     controller: 'MainCtrl'
+    resolve:
+      horarios: ($http) -> $http.get("/api/horarios").then((response) -> response.data)

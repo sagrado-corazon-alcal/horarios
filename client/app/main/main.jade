@@ -1,25 +1,24 @@
 div(ng-include='"components/navbar/navbar.html"')
 
-header#banner.hero-unit
-  .container
-    h1 'Allo, 'Allo!
-    p.lead Kick-start your next web app with Angular Fullstack
-    img(src='assets/images/yeoman.png', alt='I\'m Yeoman')
-
 .container
   .row
     .col-lg-12
-      h1.page-header Features:
-      ul.nav.nav-tabs.nav-stacked.col-md-4.col-lg-4.col-sm-6(ng-repeat='thing in awesomeThings')
-        li
-          a(href='#', tooltip='{{thing.info}}')
-            | {{thing.name}}
+      h3 Horarios del colegio Sagrado Corazón AlCal
 
-footer.footer
-  .container
-    p
-      | Angular Fullstack v2.0.13
-      = ' | '
-      a(href='https://twitter.com/tyhenkel') @tyhenkel
-      = ' | '
-      a(href='https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open') Issues
+      tabset
+        tab(ng-repeat="horario in horarios", heading="{{horario.division}}")
+          table.table.table-striped
+            thead
+              tr
+                th(ng-repeat="dia in dias") {{dia}}
+            tbody
+              tr(ng-repeat="bloque in bloques")
+                td(ng-repeat="dia in dias")
+                  div(ng-repeat="materia in materiaPara(horario, dia, bloque)")
+                    span
+                     h4 {{ materia.nombre }}
+                      small
+                    p
+                      i {{ materia.profesor }}
+
+                    p(ng-if="materia.grupo != null") {{ "Grupo " + materia.grupo }}
