@@ -36,7 +36,10 @@ exports.index = function(req, res) {
           2: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
           3: [{ nombre: "Matemática", profesor: "Grillo" }],
           4: [{ nombre: "Matemática", profesor: "Grillo" }],
-          5: [{ nombre: "Educación Física", profesor: "Amigo" }]
+          5: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         viernes: {
           1: [{ nombre: "Construcción de la Ciudadanía", profesor: "Barakián" }],
@@ -123,49 +126,47 @@ exports.index = function(req, res) {
       "division": "2°A",
       "horarios": {
         lunes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
-          ]
+          1: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          2: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          3: [{ nombre: "Cultura Religiosa", profesor: "Jové" }],
+          4: [{ nombre: "Cultura Religiosa", profesor: "Jové" }],
+          5: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
+          6: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }]
         },
         martes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
+          1: [{ nombre: "Geografía", profesor: "Calviello" }],
+          2: [{ nombre: "Geografía", profesor: "Calviello" }],
+          3: [{ nombre: "Biología", profesor: "Taliercio" }],
+          4: [{ nombre: "Biología", profesor: "Taliercio" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
           ]
         },
         miercoles: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
-          ]
+          1: [{ nombre: "Historia", profesor: "Barakián" }],
+          2: [{ nombre: "Historia", profesor: "Barakián" }],
+          3: [{ nombre: "Matemática", profesor: "Grillo" }],
+          4: [{ nombre: "Matemática", profesor: "Grillo" }],
+          5: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          6: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }]
         },
         jueves: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
+          1: [{ nombre: "Matemática", profesor: "Grillo" }],
+          2: [{ nombre: "Matemática", profesor: "Grillo" }],
+          3: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          4: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          5: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
           ]
         },
         viernes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
-          ]
+          1: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          2: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          3: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          4: [{ nombre: "Físico Química", profesor: "Taliercio" }]
         }
       }
     }, {
