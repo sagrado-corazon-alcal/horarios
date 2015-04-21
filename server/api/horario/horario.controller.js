@@ -22,7 +22,10 @@ exports.index = function(req, res) {
           3: [{ nombre: "Ciencias Naturales", profesor: "Leonik" }],
           4: [{ nombre: "Ciencias Naturales", profesor: "Leonik" }],
           5: [{ nombre: "Ciencias Sociales", profesor: "Páramo" }],
-          6: [{ nombre: "Educación Física", profesor: "Amigo" }]
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         miercoles: {
           1: [{ nombre: "Cultura Religiosa", profesor: "Grillo" }],
@@ -248,6 +251,52 @@ exports.index = function(req, res) {
             { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
             { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
           ],
+        }
+      }
+    }, {
+      "division": "3°A",
+      "horarios": {
+        lunes: {
+          1: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
+          2: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
+          3: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          4: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          5: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          6: [{ nombre: "Matemática", profesor: "Gubitosi" }]
+        },
+        martes: {
+          1: [{ nombre: "Cultura Religiosa", profesor: "Leonik" }],
+          2: [{ nombre: "Cultura Religiosa", profesor: "Leonik" }],
+          3: [{ nombre: "Inglés", profesor: "Alvarenga" }],
+          4: [{ nombre: "Inglés", profesor: "Alvarenga" }],
+          5: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
+        },
+        miercoles: {
+          1: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          2: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          3: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          4: [{ nombre: "Físico Química", profesor: "Taliercio" }]
+        },
+        jueves: {
+          1: [{ nombre: "Historia", profesor: "Rodríguez" }],
+          2: [{ nombre: "Historia", profesor: "Rodríguez" }],
+          3: [{ nombre: "Biología", profesor: "Leonik" }],
+          4: [{ nombre: "Biología", profesor: "Leonik" }],
+          5: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
+        },
+        viernes: {
+          1: [{ nombre: "Geografía", profesor: "Crippa" }],
+          2: [{ nombre: "Geografía", profesor: "Crippa" }],
+          3: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          4: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          5: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }]
         }
       }
     }
