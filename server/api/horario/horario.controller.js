@@ -173,49 +173,81 @@ exports.index = function(req, res) {
       "division": "2°B",
       "horarios": {
         lunes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
+          1: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          2: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          3: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          4: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          5: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ],
+          8: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 1 },
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 1 },
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
           ]
         },
         martes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
+          1: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          2: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          3: [{ nombre: "Cultura Religiosa", profesor: "Moro" }],
+          4: [{ nombre: "Cultura Religiosa", profesor: "Moro" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [{ nombre: "Construcción de la Ciudadanía", profesor: "Páramo" }],
+          7: [{ nombre: "Construcción de la Ciudadanía", profesor: "Páramo" }],
+          8: [
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 }
           ]
         },
         miercoles: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
-          ]
+          1: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          2: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          3: [{ nombre: "Historia", profesor: "Ughetti" }],
+          4: [{ nombre: "Historia", profesor: "Ughetti" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          7: [{ nombre: "Matemática", profesor: "Gubitosi" }]
         },
         jueves: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
+          1: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          2: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          3: [{ nombre: "Geografía", profesor: "Grilla" }],
+          4: [{ nombre: "Geografía", profesor: "Grilla" }],
+          7: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
           ]
         },
         viernes: {
-          1: [{ nombre: "Intro", profesor: "Soulignac" }],
-          2: [{ nombre: "Intro", profesor: "Soulignac" }],
-          3: [{ nombre: "Orga", profesor: "Gomez" }],
-          4: [
-            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
-            { nombre: "Redes", profesor: "Carballo", grupo: 2 }
-          ]
+          1: [{ nombre: "Biología", profesor: "Taliercio" }],
+          2: [{ nombre: "Biología", profesor: "Taliercio" }],
+          3: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          4: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
+            { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
+          ],
         }
       }
     }
