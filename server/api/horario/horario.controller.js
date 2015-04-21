@@ -303,14 +303,78 @@ exports.index = function(req, res) {
       division: "3°B",
       horarios: {
         lunes: {
+          1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          2: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          3: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          4: [{ nombre: "Físico Química", profesor: "Taliercio" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Carballo", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Carballo", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         martes: {
+          1: [{ nombre: "Biología", profesor: "Taliercio" }],
+          2: [{ nombre: "Biología", profesor: "Taliercio" }],
+          3: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          4: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [{ nombre: "Cultura Religiosa", profesor: "Leonik" }],
+          7: [{ nombre: "Cultura Religiosa", profesor: "Leonik" }],
+          8: [{ nombre: "Historia", profesor: "Páramo" }],
+          9: [{ nombre: "Historia", profesor: "Páramo" }]
         },
         miercoles: {
+          1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          2: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          3: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          4: [{ nombre: "Inglés", profesor: "Bonifacini" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Procedimientos Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Carballo", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Procedimientos Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Sistemas Tecnológicos", profesor: "Carballo", grupo: 2 }
+          ]
         },
         jueves: {
+          1: [{ nombre: "Geografía", profesor: "Crippa" }],
+          2: [{ nombre: "Geografía", profesor: "Crippa" }],
+          3: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          4: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
+            { nombre: "Procedimientos Tecnológicos", profesor: "Lezcano", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
+            { nombre: "Procedimientos Tecnológicos", profesor: "Lezcano", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Sistemas Tecnológicos", profesor: "Lezcano", grupo: 1 },
+            { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 2 }
+          ]
         },
         viernes: {
+          1: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          2: [{ nombre: "Educación Artística", profesor: "Cruz" }],
+          3: [{ nombre: "Construcción de la Ciudadanía", profesor: "Andrea" }],
+          4: [{ nombre: "Construcción de la Ciudadanía", profesor: "Andrea" }]
         }
       }
     }, {
