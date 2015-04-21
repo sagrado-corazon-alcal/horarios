@@ -428,14 +428,96 @@ exports.index = function(req, res) {
       division: "4°B",
       horarios: {
         lunes: {
+          1: [{ nombre: "Inglés", profesor: "Albella" }],
+          2: [{ nombre: "Literatura", profesor: "Rubio" }],
+          3: [{ nombre: "Literatura", profesor: "Rubio" }],
+          4: [{ nombre: "Inglés", profesor: "Albella" }],
+          8: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         martes: {
+          1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          2: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          3: [{ nombre: "Física", profesor: "González" }],
+          4: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 },
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 },
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 }
+          ],
+          8: [
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 },
+            { nombre: "Laboratorio de Hardware", profesor: "Batlle", grupo: 1 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 },
+            { nombre: "Laboratorio de Hardware", profesor: "Batlle", grupo: 1 }
+          ]
         },
         miercoles: {
+          1: [{ nombre: "Geografía", profesor: "Calviello" }],
+          2: [{ nombre: "Geografía", profesor: "Calviello" }],
+          3: [{ nombre: "Historia", profesor: "Barakián" }],
+          4: [{ nombre: "Historia", profesor: "Barakián" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ]
         },
         jueves: {
+          1: [{ nombre: "Química", profesor: "Vargas" }],
+          2: [{ nombre: "Química", profesor: "Vargas" }],
+          3: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
+          4: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 1 },
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 1 },
+            { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          ]
         },
         viernes: {
+          1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          2: [{ nombre: "Física", profesor: "González" }],
+          3: [{ nombre: "Física", profesor: "González" }],
+          4: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [{ nombre: "Tecnologías Electrónicas", profesor: "Romero" }],
+          7: [{ nombre: "Tecnologías Electrónicas", profesor: "Romero" }],
+          8: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         }
       }
     }, {
