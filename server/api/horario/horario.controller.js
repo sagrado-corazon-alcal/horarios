@@ -524,14 +524,48 @@ exports.index = function(req, res) {
       division: "5°A",
       horarios: {
         lunes: {
+          1: [{ nombre: "Matemática", profesor: "Fernández" }],
+          2: [{ nombre: "Cultura Religiosa", profesor: "Altamiranda" }],
+          3: [{ nombre: "Inglés", profesor: "Albella" }],
+          4: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          5: [{ nombre: "Inglés", profesor: "Albella" }],
+          10: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         martes: {
+          1: [{ nombre: "Historia", profesor: "Gómez" }],
+          2: [{ nombre: "Derecho", profesor: "Villalba" }],
+          3: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
+          4: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }]
         },
         miercoles: {
+          1: [{ nombre: "Introducción a la Química", profesor: "Alfaro" }],
+          2: [{ nombre: "Historia", profesor: "Gómez" }],
+          3: [{ nombre: "Geografía", profesor: "Calviello" }],
+          4: [{ nombre: "Geografía", profesor: "Calviello" }],
+          5: [{ nombre: "Derecho", profesor: "Villalba" }],
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         jueves: {
+          1: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          2: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          3: [{ nombre: "Elementos de Micro y Macro Economía", profesor: "Flores" }],
+          4: [{ nombre: "Elementos de Micro y Macro Economía", profesor: "Flores" }],
+          5: [{ nombre: "Matemática", profesor: "Fernández" }],
+          6: [{ nombre: "Matemática", profesor: "Fernández" }]
         },
         viernes: {
+          1: [{ nombre: "Literatura", profesor: "Olmedo" }],
+          2: [{ nombre: "Literatura", profesor: "Olmedo" }],
+          3: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          4: [{ nombre: "Introducción a la Química", profesor: "Alfaro" }],
+          5: [{ nombre: "Gestión Organizacional", profesor: "Villalba" }],
+          6: [{ nombre: "Gestión Organizacional", profesor: "Villalba" }]
         }
       }
     }, {
