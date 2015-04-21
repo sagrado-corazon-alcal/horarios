@@ -299,6 +299,76 @@ exports.index = function(req, res) {
           5: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }]
         }
       }
+    }, {
+      division: "3°B",
+      horarios: {
+        lunes: {
+        },
+        martes: {
+        },
+        miercoles: {
+        },
+        jueves: {
+        },
+        viernes: {
+        }
+      }
+    }, {
+      division: "4°A",
+      horarios: {
+        lunes: {
+        },
+        martes: {
+        },
+        miercoles: {
+        },
+        jueves: {
+        },
+        viernes: {
+        }
+      }
+    }, {
+      division: "4°B",
+      horarios: {
+        lunes: {
+        },
+        martes: {
+        },
+        miercoles: {
+        },
+        jueves: {
+        },
+        viernes: {
+        }
+      }
+    }, {
+      division: "5°A",
+      horarios: {
+        lunes: {
+        },
+        martes: {
+        },
+        miercoles: {
+        },
+        jueves: {
+        },
+        viernes: {
+        }
+      }
+    }, {
+      division: "5°B",
+      horarios: {
+        lunes: {
+        },
+        martes: {
+        },
+        miercoles: {
+        },
+        jueves: {
+        },
+        viernes: {
+        }
+      }
     }
   ];
 
