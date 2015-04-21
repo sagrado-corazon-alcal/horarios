@@ -7,8 +7,8 @@ var Horario = require('./horario.model');
 exports.index = function(req, res) {
   var horarios = [
     {
-      "division": "1°A",
-      "horarios": {
+      division: "1°A",
+      horarios: {
         lunes: {
           1: [{ nombre: "Matemática", profesor: "Grillo" }],
           2: [{ nombre: "Matemática", profesor: "Grillo" }],
@@ -53,8 +53,8 @@ exports.index = function(req, res) {
         }
       }
     }, {
-      "division": "1°B",
-      "horarios": {
+      division: "1°B",
+      horarios: {
         lunes: {
           1: [{ nombre: "Inglés", profesor: "Alvarenga" }],
           2: [{ nombre: "Inglés", profesor: "Alvarenga" }],
@@ -126,8 +126,8 @@ exports.index = function(req, res) {
         }
       }
     }, {
-      "division": "2°A",
-      "horarios": {
+      division: "2°A",
+      horarios: {
         lunes: {
           1: [{ nombre: "Educación Artística", profesor: "Cruz" }],
           2: [{ nombre: "Educación Artística", profesor: "Cruz" }],
@@ -173,8 +173,8 @@ exports.index = function(req, res) {
         }
       }
     }, {
-      "division": "2°B",
-      "horarios": {
+      division: "2°B",
+      horarios: {
         lunes: {
           1: [{ nombre: "Físico Química", profesor: "Taliercio" }],
           2: [{ nombre: "Físico Química", profesor: "Taliercio" }],
@@ -254,8 +254,8 @@ exports.index = function(req, res) {
         }
       }
     }, {
-      "division": "3°A",
-      "horarios": {
+      division: "3°A",
+      horarios: {
         lunes: {
           1: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
           2: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
