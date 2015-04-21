@@ -381,14 +381,47 @@ exports.index = function(req, res) {
       division: "4°A",
       horarios: {
         lunes: {
+          1: [{ nombre: "Literatura", profesor: "Rubio" }],
+          2: [{ nombre: "Inglés", profesor: "Albella" }],
+          3: [{ nombre: "Historia", profesor: "Ughetti" }],
+          4: [{ nombre: "Historia", profesor: "Ughetti" }]
         },
         martes: {
+          1: [{ nombre: "Teoría de las Organizaciones", profesor: "Rojas" }],
+          2: [{ nombre: "Teoría de las Organizaciones", profesor: "Rojas" }],
+          3: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
+          4: [{ nombre: "Introducción a la Física", profesor: "González" }],
+          5: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         miercoles: {
+          1: [{ nombre: "Literatura", profesor: "Rubio" }],
+          2: [{ nombre: "Literatura", profesor: "Rubio" }],
+          3: [{ nombre: "Biología", profesor: "Pabón" }],
+          4: [{ nombre: "Biología", profesor: "Pabón" }],
+          5: [{ nombre: "Geografía", profesor: "Calviello" }],
+          6: [{ nombre: "Geografía", profesor: "Calviello" }]
         },
         jueves: {
+          1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          2: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
+          3: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          4: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+          5: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         viernes: {
+          1: [{ nombre: "Ntics", profesor: "Báez" }],
+          2: [{ nombre: "Ntics", profesor: "Báez" }],
+          3: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
+          4: [{ nombre: "Introducción a la Física", profesor: "González" }],
+          5: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+          6: [{ nombre: "Inglés", profesor: "Albella" }]
         }
       }
     }, {
