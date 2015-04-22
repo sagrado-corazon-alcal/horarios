@@ -1,6 +1,6 @@
 'use strict'
 
-app.controller 'MainCtrl', ($scope, horarios) ->
+app.controller 'MainCtrl', ($scope, horarios, $filter) ->
   hora = (hora, minutos) ->
     fecha = new Date
     fecha.setHours hora
@@ -37,8 +37,14 @@ app.controller 'MainCtrl', ($scope, horarios) ->
       fin: hora(17, 30)
 
   $scope.dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
-  $scope.bloques = [1..8]
+  $scope.bloques = [1..9]
   $scope.horarios = horarios
+
+  $scope.horarioDe = (bloque) ->
+    horario = horasSegunBloque[bloque]
+    [horario.inicio, horario.fin]
+    .map (hora) -> $filter("date")(hora, "H:mm")
+    .join " - "
 
   $scope.materiaPara = (horario, dia, bloque) ->
     materiasDelDia = horario.horarios[_.deburr dia.toLowerCase()]
