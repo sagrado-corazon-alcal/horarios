@@ -572,14 +572,94 @@ exports.index = function(req, res) {
       division: "5°B",
       horarios: {
         lunes: {
+          1: [{ nombre: "Historia", profesor: "Gómez" }],
+          2: [{ nombre: "Análisis Matemático", profesor: "Fernández" }],
+          3: [{ nombre: "Análisis Matemático", profesor: "Fernández" }],
+          4: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ],
+          6: [
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Diseño Web", profesor: "SIN PROFE", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Diseño Web", profesor: "SIN PROFE", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 2 }
+          ]
         },
         martes: {
+          1: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
+          2: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
+          3: [{ nombre: "Geografía", profesor: "Calviello" }],
+          4: [{ nombre: "Geografía", profesor: "Calviello" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Laboratorio de Diseño Web", profesor: "SIN PROFE", grupo: 1 },
+            { nombre: "Laboratorio de Bases de Datos", profesor: "SIN PROFE", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Diseño Web", profesor: "SIN PROFE", grupo: 1 },
+            { nombre: "Laboratorio de Bases de Datos", profesor: "SIN PROFE", grupo: 2 }
+          ],
+          8: [
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 1 },
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 2 }
+          ]
         },
         miercoles: {
+          1: [{ nombre: "Historia", profesor: "Gómez" }],
+          2: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
+          3: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
+          4: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
+          6: [
+            { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
+            { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
+          ]
         },
         jueves: {
+          1: [{ nombre: "Inglés", profesor: "Albella" }],
+          2: [{ nombre: "Inglés", profesor: "Albella" }],
+          3: [{ nombre: "Análisis Matemático", profesor: "Fernández" }],
+          4: [{ nombre: "Análisis Matemático", profesor: "Fernández" }],
+          5: [{ nombre: "Cultura Religiosa", profesor: "Altamiranda" }],
+          8: [
+            { nombre: "Laboratorio de Bases de Datos", profesor: "SIN PROFE", grupo: 1 },
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 2 }
+          ],
+          9: [
+            { nombre: "Laboratorio de Bases de Datos", profesor: "SIN PROFE", grupo: 1 },
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 2 }
+          ]
         },
         viernes: {
+          1: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
+          2: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
+          3: [{ nombre: "Literatura", profesor: "Olmedo" }],
+          4: [{ nombre: "Literatura", profesor: "Olmedo" }],
+          5: [{ nombre: "Almuerzo" }],
+          6: [
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 2 }
+          ],
+          7: [
+            { nombre: "Laboratorio de Programación II", profesor: "Aloi", grupo: 1 },
+            { nombre: "Laboratorio de Redes Informáticas", profesor: "Carballo", grupo: 2 }
+          ],
+          8: [{ nombre: "Sistemas Digitales", profesor: "Romero" }],
+          9: [{ nombre: "Sistemas Digitales", profesor: "Romero" }]
         }
       }
     }
