@@ -1,0 +1,11 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+.container
+  .row
+    .col-lg-12
+      form.form-inline
+        .form-group
+          label.sr-only Profesor
+          input.form-control(ng-model="profesor", typeahead="it for it in profesores | filter:$viewValue", required="", placeholder="Nombre profesor")
+
+        button.btn.btn-primary(type="submit") Ver horarios

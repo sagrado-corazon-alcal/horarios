@@ -6,15 +6,8 @@ angular.module 'horariosApp'
     title: 'Home'
     link: '/'
   ,
-    title: "Cursos"
-    link: "/cursos"
-    childs: [
-      title: "Ver"
-      link: ""
-    ,
-      title: "Cargar"
-      link: "/cargar"
-    ]
+    title: "Por profesor"
+    link: "/profesor"
   ]
 
   $scope.simpleEntries = _.reject(menu, "childs")
