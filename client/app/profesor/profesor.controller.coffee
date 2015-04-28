@@ -1,8 +1,16 @@
 'use strict'
 
 angular.module 'horariosApp'
-.controller 'ProfesorCtrl', ($scope, $http, $filter, profesores) ->
+
+.controller 'ProfesorCtrl', ($scope, $state, profesores) ->
   $scope.profesores = profesores
+
+  $scope.verHorariosDeProfesor = ->
+    $state.go "^.ver", nombre: $scope.profesorSeleccionado
+
+.controller 'ProfesorVerCtrl', ($scope, $filter, profesor, horarios) ->
+  $scope.profesor = profesor
+  $scope.horarios = horarios
 
   hora = (hora, minutos) ->
     fecha = new Date
@@ -41,9 +49,6 @@ angular.module 'horariosApp'
 
   $scope.dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
   $scope.bloques = [1..9]
-
-  $scope.cargarHorariosDeProfesor = ->
-    ($http.get "/api/horarios?profesor=#{$scope.profesor}").success (horarios) -> $scope.horarios = horarios
 
   $scope.horarioDe = (bloque) ->
     horario = horasSegunBloque[bloque]

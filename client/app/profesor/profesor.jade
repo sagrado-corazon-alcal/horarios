@@ -1,29 +1,4 @@
 div(ng-include='"components/navbar/navbar.html"')
 
 .container
-  .row
-    .col-lg-12
-      form.form-inline(ng-submit="cargarHorariosDeProfesor()")
-        .form-group
-          label.sr-only Profesor
-          input.form-control(ng-model="profesor", typeahead="it for it in profesores | filter:$viewValue", required="", placeholder="Nombre profesor")
-
-        button.btn.btn-primary(type="submit") Ver horarios
-
-  .row(ng-show="horarios != null")
-    table.table.table-striped
-      thead
-        tr
-          th Horario
-          th(ng-repeat="dia in dias") {{dia}}
-      tbody
-        tr(ng-repeat="bloque in bloques")
-          td {{ horarioDe(bloque) }}
-          td(ng-repeat="dia in dias")
-            span
-             h4 {{ materiaPara(dia, bloque).nombre }}
-              small
-            p
-              i {{ materiaPara(dia, bloque).division }}
-
-            p(ng-if="materia.grupo != null") {{ "Grupo " + materiaPara(dia, bloque).grupo }}
+  .row(ui-view='')

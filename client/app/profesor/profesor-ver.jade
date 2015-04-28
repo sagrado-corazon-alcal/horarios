@@ -1,0 +1,19 @@
+h3 Horarios de&nbsp;
+  b {{profesor}}
+
+table.table.table-striped
+  thead
+    tr
+      th Horario
+      th(ng-repeat="dia in dias") {{dia}}
+  tbody
+    tr(ng-repeat="bloque in bloques")
+      td {{ horarioDe(bloque) }}
+      td(ng-repeat="dia in dias")
+        span
+         h4 {{ materiaPara(dia, bloque).nombre }}
+          small
+        p
+          i {{ materiaPara(dia, bloque).division }}
+
+        p(ng-if="materiaPara(dia, bloque).grupo != null") {{ "Grupo " + materiaPara(dia, bloque).grupo }}
