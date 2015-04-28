@@ -17,9 +17,12 @@ var getHorarios = function (profesor, dia) {
   .reject(function(it) { return _.isEmpty(it.horarios); })
   .map(function(horario) {
     return _.mapValues(horario.horarios, function (it) {
+      var hora = _.find(it, { profesor: profesor });
+
       return {
-        nombre: it[0].nombre,
-        division: horario.division
+        nombre: hora.nombre,
+        division: horario.division,
+        grupo: hora.grupo
       };
     });
   })

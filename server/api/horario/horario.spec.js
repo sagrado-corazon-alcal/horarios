@@ -18,13 +18,26 @@ describe('GET /api/horarios', function() {
       });
   });
 
-  it('cuando se le pasa un profesor solo devuelve los horarios de ese', function(done) {
-    request(app)
-      .get('/api/horarios?profesor=Páramo')
-      .expect(200)
-      .expect('Content-Type', /json/)
-      .end(function(err, res) {
-        if (err) return done(err);
+  describe('cuando se le pasa un profesor solo devuelve los horarios de ese', function() {
+    var assert = null;
+
+    before(function () {
+      assert = function (done, profesor, assertion) {
+        request(app)
+          .get('/api/horarios?profesor=' + profesor)
+          .expect(200)
+          .expect('Content-Type', /json/)
+          .end(function(err, res) {
+            if (err) return done(err);
+
+            assertion(res);
+            done();
+          });
+      };
+    });
+
+    it('para materias sin grupos', function (done) {
+      assert(done, "Páramo", function (res) {
         res.body.should.eql({
           lunes: {
             5: { nombre: "Ciencias Sociales", division: "1°A" }
@@ -45,7 +58,82 @@ describe('GET /api/horarios', function() {
             7: { nombre: "Construcción de la Ciudadanía", division: "1°B" }
           }
         });
-        done();
       });
+    })
+
+    it('para materias con grupos', function (done) {
+      assert(done, "Aloi", function (res) {
+        res.body.should.eql({
+          "lunes": {
+              "6": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 1
+              },
+              "7": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 1
+              },
+              "8": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 2
+              },
+              "9": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 2
+              }
+          },
+          "martes": {
+              "6": {
+                  "nombre": "Laboratorio de Programación I",
+                  "division": "4°B",
+                  "grupo": 1
+              },
+              "7": {
+                  "nombre": "Laboratorio de Programación I",
+                  "division": "4°B",
+                  "grupo": 1
+              },
+              "8": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 2
+              },
+              "9": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 2
+              }
+          },
+          "miercoles": {
+              "6": {
+                  "nombre": "Laboratorio de Programación I",
+                  "division": "4°B",
+                  "grupo": 1
+              },
+              "7": {
+                  "nombre": "Laboratorio de Programación I",
+                  "division": "4°B",
+                  "grupo": 1
+              }
+          },
+          "viernes": {
+              "6": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 1
+              },
+              "7": {
+                  "nombre": "Laboratorio de Programación II",
+                  "division": "5°B",
+                  "grupo": 1
+              }
+          }
+        });
+      });
+    })
   });
 });
