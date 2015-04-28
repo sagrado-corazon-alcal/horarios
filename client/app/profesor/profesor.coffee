@@ -4,7 +4,7 @@ angular.module 'horariosApp'
 .config ($stateProvider) ->
   $stateProvider
     .state 'profesor',
-      url: '/profesor'
+      url: '/docente'
       templateUrl: 'app/profesor/profesor.html'
       abstract: true
 
