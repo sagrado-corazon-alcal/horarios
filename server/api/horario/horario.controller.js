@@ -3,9 +3,14 @@
 var _ = require('lodash');
 
 var horarios = require('./horario.data');
+var profesores = require('../profesor/profesor.data');
+
+var equalsIgnoreCaseAndAccent = function (one, another) {
+  return new RegExp("^" + _.deburr(one) + "$", "i").test(_.deburr(another));
+}
 
 var isProfesorLike = function (expected, horario) {
-  return new RegExp("^" + _.deburr(expected) + "$", "i").test(_.deburr(horario.profesor));
+  return equalsIgnoreCaseAndAccent(expected, horario.profesor);
 };
 
 var getHorarios = function (profesor, dia) {
@@ -35,12 +40,17 @@ var getHorarios = function (profesor, dia) {
 };
 
 exports.index = function(req, res) {
-  if (req.query.profesor == null) {
+  var profesor = req.query.profesor;
+
+  if (profesor == null) {
     return res.json(200, horarios);
   } else {
     var dias = ["lunes", "martes", "miercoles", "jueves", "viernes"];
-    var horarioPorProfe = _.zipObject(dias, _.map(dias, _.partial(getHorarios, req.query.profesor)));
+    var horarioPorProfe = _.zipObject(dias, _.map(dias, _.partial(getHorarios, profesor)));
 
-    return res.json(200, horarioPorProfe);
+    return res.json(200, {
+      profesor: _.find(profesores, _.partial(equalsIgnoreCaseAndAccent, profesor)),
+      horarios: horarioPorProfe
+    });
   }
 };

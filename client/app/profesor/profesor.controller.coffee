@@ -8,9 +8,9 @@ angular.module 'horariosApp'
   $scope.verHorariosDeProfesor = ->
     $state.go "^.ver", nombre: $scope.profesorSeleccionado
 
-.controller 'ProfesorVerCtrl', ($scope, $filter, profesor, horarios) ->
-  $scope.profesor = profesor
-  $scope.horarios = horarios
+.controller 'ProfesorVerCtrl', ($scope, $filter, horarios) ->
+  $scope.profesor = horarios.profesor
+  $scope.horarios = horarios.horarios
 
   hora = (hora, minutos) ->
     fecha = new Date
