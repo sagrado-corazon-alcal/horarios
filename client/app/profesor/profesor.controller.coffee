@@ -8,7 +8,8 @@ angular.module 'horariosApp'
   $scope.verHorariosDeProfesor = ->
     $state.go "^.ver", nombre: $scope.profesorSeleccionado
 
-.controller 'ProfesorVerCtrl', ($scope, $filter, horarios) ->
+.controller 'ProfesorVerCtrl', ($scope, $filter, profesorIngresado, horarios) ->
+  $scope.profesorIngresado = profesorIngresado
   $scope.profesor = horarios.profesor
   $scope.horarios = horarios.horarios
 
@@ -49,6 +50,8 @@ angular.module 'horariosApp'
 
   $scope.dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
   $scope.bloques = [1..9]
+
+  $scope.hayHorarios = -> $scope.profesor?
 
   $scope.horarioDe = (bloque) ->
     horario = horasSegunBloque[bloque]

@@ -20,4 +20,5 @@ angular.module 'horariosApp'
       templateUrl: 'app/profesor/profesor-ver.html'
       controller: 'ProfesorVerCtrl'
       resolve:
+        profesorIngresado: ($stateParams) -> $stateParams.nombre
         horarios: ($http, $stateParams) -> $http.get("/api/horarios?profesor=#{$stateParams.nombre}").then((response) -> response.data)

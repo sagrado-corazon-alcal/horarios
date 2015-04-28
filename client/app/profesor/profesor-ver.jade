@@ -1,19 +1,31 @@
-h3 Horarios de&nbsp;
-  b {{profesor}}
+div(ng-if="!hayHorarios()")
+  h2
+    span No hay ningún horario para&nbsp;
+    b {{ profesorIngresado }}
+    span &nbsp;:(
 
-table.table.table-striped
-  thead
-    tr
-      th Horario
-      th(ng-repeat="dia in dias") {{dia}}
-  tbody
-    tr(ng-repeat="bloque in bloques")
-      td {{ horarioDe(bloque) }}
-      td(ng-repeat="dia in dias")
-        span
-         h4 {{ materiaPara(dia, bloque).nombre }}
-          small
-        p
-          i {{ materiaPara(dia, bloque).division }}
+    p
+      small
+        span Podés buscar por nombre en la vista&nbsp;
+        a(ui-sref="^.buscar") por docente.
 
-        p(ng-if="materiaPara(dia, bloque).grupo != null") {{ "Grupo " + materiaPara(dia, bloque).grupo }}
+div(ng-if="hayHorarios()")
+  h3 Horarios de&nbsp;
+    b {{profesor}}
+
+  table.table.table-striped
+    thead
+      tr
+        th Horario
+        th(ng-repeat="dia in dias") {{dia}}
+    tbody
+      tr(ng-repeat="bloque in bloques")
+        td {{ horarioDe(bloque) }}
+        td(ng-repeat="dia in dias")
+          span
+           h4 {{ materiaPara(dia, bloque).nombre }}
+            small
+          p
+            i {{ materiaPara(dia, bloque).division }}
+
+          p(ng-if="materiaPara(dia, bloque).grupo != null") {{ "Grupo " + materiaPara(dia, bloque).grupo }}
