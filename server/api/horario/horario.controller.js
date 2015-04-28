@@ -5,7 +5,7 @@ var _ = require('lodash');
 var horarios = require('./horario.data');
 
 var isProfesorLike = function (expected, horario) {
-  return new RegExp("^" + expected + "$", "i").test(horario.profesor)
+  return new RegExp("^" + _.deburr(expected) + "$", "i").test(_.deburr(horario.profesor));
 };
 
 var getHorarios = function (profesor, dia) {
