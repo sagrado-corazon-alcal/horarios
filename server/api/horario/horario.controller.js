@@ -42,7 +42,7 @@ var getHorarios = function (profesor, dia) {
 exports.index = function(req, res) {
   var profesor = req.query.profesor;
 
-  if (profesor == null) {
+  if (_.isEmpty(profesor)) {
     return res.json(200, horarios);
   } else {
     var dias = ["lunes", "martes", "miercoles", "jueves", "viernes"];
