@@ -483,23 +483,7 @@ module.exports = [
         2: [{ nombre: "Química", profesor: "Vargas" }],
         3: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
         4: [{ nombre: "Matemática", profesor: "Gubitosi" }],
-        5: [{ nombre: "Almuerzo" }],
-        6: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 1 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
-        ],
-        7: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 1 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
-        ],
-        8: [
-          { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
-        ],
-        9: [
-          { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
-        ]
+        5: [{ nombre: "Almuerzo" }]
       },
       viernes: {
         1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
