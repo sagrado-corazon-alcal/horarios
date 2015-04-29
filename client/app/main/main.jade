@@ -14,8 +14,8 @@ div(ng-include='"components/navbar/navbar.html"')
                 th(ng-repeat="dia in dias") {{dia}}
             tbody
               tr(ng-repeat="bloque in bloques")
-                td {{ horarioDe(bloque) }}
-                td(ng-repeat="dia in dias")
+                td.col-lg-2 {{ horarioDe(bloque) }}
+                td.col-lg-2(ng-repeat="dia in dias")
                   div(ng-repeat="materia in materiaPara(horario, dia, bloque)")
                     span
                      h4 {{ materia.nombre }}
