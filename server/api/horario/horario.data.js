@@ -657,5 +657,81 @@ module.exports = [
         9: [{ nombre: "Sistemas Digitales", profesor: "Romero" }]
       }
     }
+  }, {
+    division: "6°A",
+    horarios: {
+      lunes: {
+        6: [{ nombre: "Filosofía", profesor: "Silvestri" }],
+        7: [{ nombre: "Filosofía", profesor: "Silvestri" }],
+        8: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        9: [{ nombre: "Matemática", profesor: "Altamiranda" }]
+      },
+      martes: {
+        6: [{ nombre: "Inglés", profesor: "Albella" }],
+        7: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        8: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        9: [{ nombre: "Arte", profesor: "Campos" }],
+        10: [{ nombre: "Arte", profesor: "Campos" }]
+      },
+      miercoles: {
+        5: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        6: [{ nombre: "Economía Política", profesor: "Flores" }],
+        7: [{ nombre: "Economía Política", profesor: "Flores" }],
+        8: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        9: [{ nombre: "Literatura", profesor: "Olmedo" }]
+      },
+      jueves: {
+        6: [{ nombre: "Economía Política", profesor: "Flores" }],
+        7: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        8: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        9: [{ nombre: "Matemática", profesor: "Altamiranda" }]
+      },
+      viernes: {
+        5: [{ nombre: "Trabajo y Ciudadanía", profesor: "Gómez" }],
+        6: [{ nombre: "Trabajo y Ciudadanía", profesor: "Gómez" }],
+        7: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        8: [{ nombre: "Inglés", profesor: "Albella" }],
+        9: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }]
+      }
+    }
+  }, {
+    division: "6°B",
+    horarios: {
+      lunes: {
+        5: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        6: [{ nombre: "Inglés", profesor: "Albella" }],
+        7: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        8: [{ nombre: "Filosofía e Historia de la Ciencia y la Técnica", profesor: "Silvestri" }],
+        9: [{ nombre: "Filosofía e Historia de la Ciencia y la Técnica", profesor: "Silvestri" }]
+      },
+      martes: {
+        6: [{ nombre: "Biología", profesor: "Pabón" }],
+        7: [{ nombre: "Inglés", profesor: "Albella" }],
+        8: [{ nombre: "Química del Carbono", profesor: "Alfaro" }],
+        9: [{ nombre: "Química del Carbono", profesor: "Alfaro" }]
+      },
+      miercoles: {
+        5: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        6: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        7: [{ nombre: "Ambiente, Desarrollo y Sociedad", profesor: "Calviello" }],
+        8: [{ nombre: "Ambiente, Desarrollo y Sociedad", profesor: "Calviello" }],
+        9: [{ nombre: "Física Clásica y Moderna", profesor: "González" }],
+        10: [{ nombre: "Física Clásica y Moderna", profesor: "González" }]
+      },
+      jueves: {
+        6: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        7: [{ nombre: "Química del Carbono", profesor: "Alfaro" }],
+        8: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        9: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        10: [{ nombre: "Matemática", profesor: "Altamiranda" }]
+      },
+      viernes: {
+        5: [{ nombre: "Física Clásica y Moderna", profesor: "González" }],
+        6: [{ nombre: "Biología", profesor: "Pabón" }],
+        7: [{ nombre: "Biología", profesor: "Pabón" }],
+        8: [{ nombre: "Trabajo y Ciudadanía", profesor: "Barakián" }],
+        9: [{ nombre: "Trabajo y Ciudadanía", profesor: "Barakián" }]
+      }
+    }
   }
 ];

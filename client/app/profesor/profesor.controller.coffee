@@ -47,9 +47,12 @@ angular.module 'horariosApp'
     9:
       inicio: hora(16, 30)
       fin: hora(17, 30)
+    10:
+      inicio: hora(17, 30)
+      fin: hora(18, 30)
 
   $scope.dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
-  $scope.bloques = [1..9]
+  $scope.bloques = [1..10]
 
   $scope.hayHorarios = -> $scope.profesor?
 
