@@ -151,12 +151,12 @@ describe('GET /api/horarios', function() {
                 6: {
                     nombre: "Laboratorio de Programación I",
                     division: "4°B",
-                    grupo: 1
+                    grupo: 2
                 },
                 7: {
                     nombre: "Laboratorio de Programación I",
                     division: "4°B",
-                    grupo: 1
+                    grupo: 2
                 },
                 8: {
                     nombre: "Laboratorio de Programación II",
