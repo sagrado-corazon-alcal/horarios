@@ -63,3 +63,7 @@ angular.module 'horariosApp'
   $scope.materiaPara = (dia, bloque) ->
     materiasDelDia = $scope.horarios[_.deburr dia.toLowerCase()]
     if materiasDelDia? then materiasDelDia[bloque] else ""
+
+  $scope.esDia = (dia) ->
+    diaDeHoy = new Date().getDay() - 1 # hay que restarle uno porque empieza en el Domingo
+    diaDeHoy == $scope.dias.indexOf dia

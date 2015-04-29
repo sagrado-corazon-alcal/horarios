@@ -12,7 +12,7 @@ div(ng-if="hayHorarios()")
   h3 Horarios de&nbsp;
     b {{profesor}}
 
-  table.table.table-striped
+  table.table
     thead
       tr
         th Horario
@@ -20,7 +20,7 @@ div(ng-if="hayHorarios()")
     tbody
       tr(ng-repeat="bloque in bloques")
         td.col-lg-2 {{ horarioDe(bloque) }}
-        td.col-lg-2(ng-repeat="dia in dias")
+        td.col-lg-2(ng-repeat="dia in dias", ng-class="{ 'alert-info': esDia(dia) }")
           h4
             span {{ materiaPara(dia, bloque).division }}&nbsp;
             span(ng-if="materiaPara(dia, bloque).grupo != null") - Grupo {{ materiaPara(dia, bloque).grupo }}
