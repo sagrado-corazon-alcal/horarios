@@ -85,11 +85,11 @@ module.exports = [
         7: [{ nombre: "Ciencias Sociales", profesor: "Barakián" }],
         8: [
           { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
-          { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 },
+          { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 }
         ],
         9: [
           { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 1 },
-          { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 },
+          { nombre: "Sistemas Tecnológicos", profesor: "Cantero", grupo: 2 }
         ]
       },
       jueves: {
@@ -126,8 +126,8 @@ module.exports = [
       lunes: {
         1: [{ nombre: "Educación Artística", profesor: "Cruz" }],
         2: [{ nombre: "Educación Artística", profesor: "Cruz" }],
-        3: [{ nombre: "Cultura Religiosa", profesor: "Jové" }],
-        4: [{ nombre: "Cultura Religiosa", profesor: "Jové" }],
+        3: [{ nombre: "Cultura Religiosa", profesor: "Llovet" }],
+        4: [{ nombre: "Cultura Religiosa", profesor: "Llovet" }],
         5: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }],
         6: [{ nombre: "Construcción de la Ciudadanía", profesor: "Ughetti" }]
       },
@@ -217,8 +217,8 @@ module.exports = [
       jueves: {
         1: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
         2: [{ nombre: "Prácticas del Lenguaje", profesor: "Ferrero" }],
-        3: [{ nombre: "Geografía", profesor: "Grilla" }],
-        4: [{ nombre: "Geografía", profesor: "Grilla" }],
+        3: [{ nombre: "Geografía", profesor: "Crippa" }],
+        4: [{ nombre: "Geografía", profesor: "Crippa" }],
         7: [
           { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
           { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
@@ -245,7 +245,7 @@ module.exports = [
         9: [
           { nombre: "Lenguajes Tecnológicos", profesor: "Báez", grupo: 1 },
           { nombre: "Procedimientos Técnicos", profesor: "Lezcano", grupo: 2 }
-        ],
+        ]
       }
     }
   }, {
@@ -272,8 +272,8 @@ module.exports = [
       miercoles: {
         1: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
         2: [{ nombre: "Prácticas del Lenguaje", profesor: "Laborde" }],
-        3: [{ nombre: "Físico Química", profesor: "Taliercio" }],
-        4: [{ nombre: "Físico Química", profesor: "Taliercio" }]
+        3: [{ nombre: "Físico Química", profesor: "Herrera" }],
+        4: [{ nombre: "Físico Química", profesor: "Herrera" }]
       },
       jueves: {
         1: [{ nombre: "Historia", profesor: "Rodríguez" }],
@@ -368,8 +368,8 @@ module.exports = [
       viernes: {
         1: [{ nombre: "Educación Artística", profesor: "Cruz" }],
         2: [{ nombre: "Educación Artística", profesor: "Cruz" }],
-        3: [{ nombre: "Construcción de la Ciudadanía", profesor: "Andrea" }],
-        4: [{ nombre: "Construcción de la Ciudadanía", profesor: "Andrea" }]
+        3: [{ nombre: "Construcción de la Ciudadanía", profesor: "Sierra Bueno" }],
+        4: [{ nombre: "Construcción de la Ciudadanía", profesor: "Sierra Bueno" }]
       }
     }
   }, {
@@ -379,7 +379,8 @@ module.exports = [
         1: [{ nombre: "Literatura", profesor: "Rubio" }],
         2: [{ nombre: "Inglés", profesor: "Albella" }],
         3: [{ nombre: "Historia", profesor: "Ughetti" }],
-        4: [{ nombre: "Historia", profesor: "Ughetti" }]
+        4: [{ nombre: "Historia", profesor: "Ughetti" }],
+        5: [{ nombre: "Inglés", profesor: "Albella" }]
       },
       martes: {
         1: [{ nombre: "Teoría de las Organizaciones", profesor: "Rojas" }],
@@ -401,10 +402,10 @@ module.exports = [
       },
       jueves: {
         1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
-        2: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
+        2: [{ nombre: "Matemática", profesor: "Gubitosi" }],
         3: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
         4: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
-        5: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+        5: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
         6: [
           { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
           { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
@@ -415,8 +416,7 @@ module.exports = [
         2: [{ nombre: "Ntics", profesor: "Báez" }],
         3: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
         4: [{ nombre: "Introducción a la Física", profesor: "González" }],
-        5: [{ nombre: "Matemática", profesor: "Gubitosi" }],
-        6: [{ nombre: "Inglés", profesor: "Albella" }]
+        5: [{ nombre: "Matemática", profesor: "Gubitosi" }]
       }
     }
   }, {
@@ -439,20 +439,20 @@ module.exports = [
         4: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
         5: [{ nombre: "Almuerzo" }],
         6: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 }
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
         ],
         7: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 }
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
         ],
         8: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 },
-          { nombre: "Laboratorio de Hardware", profesor: "Batlle", grupo: 1 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ],
         9: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 },
-          { nombre: "Laboratorio de Hardware", profesor: "Batlle", grupo: 1 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ]
       },
       miercoles: {
@@ -463,30 +463,46 @@ module.exports = [
         5: [{ nombre: "Almuerzo" }],
         6: [
           { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ],
         7: [
           { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ],
         8: [
           { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ],
         9: [
           { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales", grupo: 2 }
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ]
       },
       jueves: {
         1: [{ nombre: "Química", profesor: "Vargas" }],
         2: [{ nombre: "Química", profesor: "Vargas" }],
-        3: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
+        3: [{ nombre: "Matemática", profesor: "Gubitosi" }],
         4: [{ nombre: "Matemática", profesor: "Gubitosi" }],
-        5: [{ nombre: "Almuerzo" }]
+        5: [{ nombre: "Almuerzo" }],
+        6: [
+          { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+        ],
+        7: [
+          { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+        ],
+        8: [
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+        ],
+        9: [
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+        ]
       },
       viernes: {
-        1: [{ nombre: "Matemática", profesor: "Gubitosi" }],
+        1: [{ nombre: "Cultura Religiosa", profesor: "Gubitosi" }],
         2: [{ nombre: "Física", profesor: "González" }],
         3: [{ nombre: "Física", profesor: "González" }],
         4: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
@@ -504,9 +520,9 @@ module.exports = [
     horarios: {
       lunes: {
         1: [{ nombre: "Matemática", profesor: "Fernández" }],
-        2: [{ nombre: "Cultura Religiosa", profesor: "Altamiranda" }],
+        2: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
         3: [{ nombre: "Inglés", profesor: "Albella" }],
-        4: [{ nombre: "Sistemas de Información Contable", profesor: "Rojas" }],
+        4: [{ nombre: "Cultura Religiosa", profesor: "Altamiranda" }],
         5: [{ nombre: "Inglés", profesor: "Albella" }],
         10: [
           { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
@@ -516,8 +532,8 @@ module.exports = [
       martes: {
         1: [{ nombre: "Historia", profesor: "Gómez" }],
         2: [{ nombre: "Derecho", profesor: "Villalba" }],
-        3: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
-        4: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }]
+        3: [{ nombre: "Política y Ciudadanía", profesor: "Morales S" }],
+        4: [{ nombre: "Política y Ciudadanía", profesor: "Morales S" }]
       },
       miercoles: {
         1: [{ nombre: "Introducción a la Química", profesor: "Alfaro" }],
@@ -576,8 +592,8 @@ module.exports = [
         ]
       },
       martes: {
-        1: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
-        2: [{ nombre: "Política y Ciudadanía", profesor: "Vagnoni" }],
+        1: [{ nombre: "Política y Ciudadanía", profesor: "Morales S" }],
+        2: [{ nombre: "Política y Ciudadanía", profesor: "Morales S" }],
         3: [{ nombre: "Geografía", profesor: "Calviello" }],
         4: [{ nombre: "Geografía", profesor: "Calviello" }],
         5: [{ nombre: "Almuerzo" }],
@@ -601,8 +617,8 @@ module.exports = [
       miercoles: {
         1: [{ nombre: "Historia", profesor: "Gómez" }],
         2: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
-        3: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
-        4: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
+        3: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
+        4: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
         6: [
           { nombre: "Educación Física", profesor: "Amigo", grupo: "Mujeres" },
           { nombre: "Educación Física", profesor: "Dodorico", grupo: "Hombres" }
@@ -624,8 +640,8 @@ module.exports = [
         ]
       },
       viernes: {
-        1: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
-        2: [{ nombre: "Modelos y Sistemas", profesor: "SIN PROFE" }],
+        1: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
+        2: [{ nombre: "Bases de Datos", profesor: "SIN PROFE" }],
         3: [{ nombre: "Literatura", profesor: "Olmedo" }],
         4: [{ nombre: "Literatura", profesor: "Olmedo" }],
         5: [{ nombre: "Almuerzo" }],
