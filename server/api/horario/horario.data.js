@@ -439,20 +439,20 @@ module.exports = [
         4: [{ nombre: "Salud y Adolescencia", profesor: "Pabón" }],
         5: [{ nombre: "Almuerzo" }],
         6: [
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
         ],
         7: [
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
         ],
         8: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
-          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 2 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ],
         9: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
-          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 2 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ]
       },
       miercoles: {
@@ -462,12 +462,12 @@ module.exports = [
         4: [{ nombre: "Historia", profesor: "Barakián" }],
         5: [{ nombre: "Almuerzo" }],
         6: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 1 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ],
         7: [
-          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 1 },
-          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 2 }
+          { nombre: "Laboratorio de Programación I", profesor: "Aloi", grupo: 1 },
+          { nombre: "Laboratorio de Aplicaciones", profesor: "Morales L", grupo: 2 }
         ],
         8: [
           { nombre: "Laboratorio de Hardware", profesor: "Carballo", grupo: 1 },
@@ -493,12 +493,12 @@ module.exports = [
           { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ],
         8: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
-          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 2 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ],
         9: [
-          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 1 },
-          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 2 }
+          { nombre: "Laboratorio de Hardware", profesor: "Morales L", grupo: 1 },
+          { nombre: "Laboratorio de Sistemas Operativos", profesor: "Batlle", grupo: 2 }
         ]
       },
       viernes: {
