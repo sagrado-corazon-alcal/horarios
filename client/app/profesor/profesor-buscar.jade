@@ -1,7 +1,0 @@
-.col-lg-12
-  form.form-inline(ng-submit="verHorariosDeProfesor()")
-    .form-group
-      label.sr-only Profesor
-      input.form-control(ng-model="profesorSeleccionado", typeahead="it for it in profesores | filter:$viewValue", required="", autofocus="", placeholder="Apellido del docente")
-
-    button.btn.btn-primary(type="submit") Ver horarios

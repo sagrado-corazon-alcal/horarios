@@ -22,10 +22,7 @@ div(ng-if="hayHorarios()")
       tr(ng-repeat="bloque in bloques")
         td.col-lg-2 {{ horarioDe(bloque) }}
         td.col-lg-2(ng-repeat="dia in dias")
-          span
-           h4 {{ materiaPara(dia, bloque).nombre }}
-            small
-          p
-            i {{ materiaPara(dia, bloque).division }}
-
-          p(ng-if="materiaPara(dia, bloque).grupo != null") {{ "Grupo " + materiaPara(dia, bloque).grupo }}
+          h4
+            span {{ materiaPara(dia, bloque).division }}&nbsp;
+            span(ng-if="materiaPara(dia, bloque).grupo != null") - Grupo {{ materiaPara(dia, bloque).grupo }}
+          p {{ materiaPara(dia, bloque).nombre }}
