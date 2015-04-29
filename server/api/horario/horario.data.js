@@ -657,5 +657,42 @@ module.exports = [
         9: [{ nombre: "Sistemas Digitales", profesor: "Romero" }]
       }
     }
+  }, {
+    division: "6°A",
+    horarios: {
+      lunes: {
+        6: [{ nombre: "Filosofía", profesor: "Silvestri" }],
+        7: [{ nombre: "Filosofía", profesor: "Silvestri" }],
+        8: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        9: [{ nombre: "Matemática", profesor: "Altamiranda" }]
+      },
+      martes: {
+        6: [{ nombre: "Inglés", profesor: "Albella" }],
+        7: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        8: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        9: [{ nombre: "Arte", profesor: "Campos" }],
+        10: [{ nombre: "Arte", profesor: "Campos" }]
+      },
+      miercoles: {
+        5: [{ nombre: "Matemática", profesor: "Altamiranda" }],
+        6: [{ nombre: "Economía Política", profesor: "Flores" }],
+        7: [{ nombre: "Economía Política", profesor: "Flores" }],
+        8: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        9: [{ nombre: "Literatura", profesor: "Olmedo" }]
+      },
+      jueves: {
+        6: [{ nombre: "Economía Política", profesor: "Flores" }],
+        7: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        8: [{ nombre: "Literatura", profesor: "Olmedo" }],
+        9: [{ nombre: "Matemática", profesor: "Altamiranda" }]
+      },
+      viernes: {
+        5: [{ nombre: "Trabajo y Ciudadanía", profesor: "Gómez" }],
+        6: [{ nombre: "Trabajo y Ciudadanía", profesor: "Gómez" }],
+        7: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }],
+        8: [{ nombre: "Inglés", profesor: "Albella" }],
+        9: [{ nombre: "Proyectos Organizacionales", profesor: "Rojas" }]
+      }
+    }
   }
 ];
