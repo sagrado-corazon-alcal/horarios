@@ -3,7 +3,7 @@
 angular.module 'horariosApp'
 
 .controller 'ProfesorCtrl', ($scope, $state, profesores) ->
-  $scope.profesores = profesores
+  $scope.profesores = _.map profesores, _.deburr
 
   $scope.verHorariosDeProfesor = ->
     $state.go "profesor.ver", nombre: $scope.profesorSeleccionado
